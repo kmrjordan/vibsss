@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VD | About Us</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="../JS/cart.js" defer></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-4xl font-extrabold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text animate-pulse tracking-widest font-poppins">
+        VD
+      </h1>
+      <nav class="space-x-4">
+        <a href="../home.html" class="hover:text-indigo-500">Home</a>
+        <a href="shop.html" class="hover:text-indigo-500">Shop</a>
+        <a href="about.html" class="hover:text-indigo-500 font-semibold">About</a>
+        <a href="contact.html" class="hover:text-indigo-500">Contact</a>
+        <a href="cart.html" class="hover:text-indigo-500">Cart 🛒</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="flex-grow bg-white p-8 rounded-lg shadow-md py-16 px-4 w-full">
+    <div class="max-w-3xl mx-auto space-y-10">
+
+      <div data-aos="fade-up">
+        <h2 class="text-4xl font-bold text-center text-indigo-700 mb-6">About VD</h2>
+        <p class="text-lg leading-relaxed text-gray-700 mb-6">
+          VI...dev was founded with the mission to make online shopping effortless, affordable, and enjoyable.
+          Our team is passionate about bringing you the best selection of products, from electronics to apparel, with fast delivery and excellent customer service.
+        </p>
+        <p class="text-lg leading-relaxed text-gray-700 mb-6">
+          We believe in quality, transparency, and building lasting relationships with our customers.
+          Whether you're looking for the latest gadgets or everyday essentials, ShopEase is here to help you find what you love.
+        </p>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Thank you for choosing ShopEase. We look forward to serving you!
+        </p>
+      </div>
+
+      <!-- Contact Information -->
+      <div data-aos="zoom-in" class="bg-gray-100 p-6 rounded-lg shadow-sm">
+        <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Contact Information</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>CEO:</strong> DEV</li>
+          <li><strong>Email:</strong> <a href="mailto:devk81820@gmail.com" class="text-indigo-600 hover:underline">devk81820@gmail.com</a></li>
+          <li><strong>Phone:</strong> +91-6200765387</li>
+          <li><strong>Address:</strong> 123, College road, Bundu, Jharkhand, 835204</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      &copy; 2025 ShopEase. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+</html>

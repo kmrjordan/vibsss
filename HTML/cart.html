@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VD | Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../JS/cart.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-4xl font-extrabold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text animate-pulse tracking-widest font-poppins">
+        VD
+      </h1>
+      <nav class="space-x-4">
+        <a href="../home.html" class="hover:text-indigo-500">Home</a>
+        <a href="shop.html" class="hover:text-indigo-500">Shop</a>
+        <a href="about.html" class="hover:text-indigo-500">About</a>
+        <a href="contact.html" class="hover:text-indigo-500">Contact</a>
+        <a href="cart.html" class="hover:text-indigo-500 font-semibold">
+          Cart 🛒 <span id="cart-count" class="ml-1 font-bold"></span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cart Content -->
+  <main class="flex-grow max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md py-16 px-4 w-full">
+    <h2 class="text-3xl font-bold mb-8 text-indigo-700">Your Shopping Cart</h2>
+    <div id="cart-items"></div>
+
+    <div class="mt-8 text-right font-semibold text-lg">
+      Total: <span id="total-price">$0.00</span>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      &copy; 2025 ShopEase. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
